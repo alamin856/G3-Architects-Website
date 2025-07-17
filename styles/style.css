@@ -39,6 +39,7 @@
     font-weight: 600;
 }
 .main > section{
+    margin: 0 12px;
     margin-top: 130px;
 }
 /* Shared Styles End */
@@ -53,6 +54,7 @@
 .nav{
     max-width: 1440px;
     margin: 0 auto;
+    margin: 0 12px;
     padding: 25px 0;
 }
 .brand{
@@ -76,6 +78,7 @@
 .banner{
     max-width: 1440px;
     margin: 0 auto;
+    margin: 0 12px;
     margin-top: 100px;
     padding: 25px 0;
 }
@@ -149,6 +152,7 @@
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
 }
 .fact-card{
     border: 1px solid #FF900E;
@@ -168,9 +172,46 @@
     font-size: 1.25rem;
     font-weight: 600;
 }
-
 /* Some Facts Styles End */
 
+/* Sponsors Styles Start */
+.sponsor-title{
+    font-size: 2.8125rem;
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.sponsor-description{
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sponsors-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+.sponsor-companies{
+    filter: grayscale(100%);
+}
+/* Sponsors Styles End */
+
+/* Footer Styles Start */
+.footer{
+    background-color: #FF900E1A;
+    margin: 0 12px;
+    margin-top: 130px;
+}
+.footer-description{
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+}
+/* Footer Styles End */
 
 
 /* Responsive Media Query */
@@ -199,6 +240,11 @@
         justify-items: center;
         gap: 24px;
     }
+    .sponsors-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 48px;
+    }
 }
 
 /* Responsive For Medium Device */
@@ -217,5 +263,10 @@
         grid-template-columns: 1fr 1fr;
         justify-items: center;
         gap: 24px;
+    }
+    .sponsors-container{
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 48px;
     }
 }
