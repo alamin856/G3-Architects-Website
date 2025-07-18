@@ -139,6 +139,63 @@
     margin-bottom: 32px;
 }
 
+/* Features Styles Start */
+.features{
+    gap: 146px;
+    align-items: center;
+}
+/* .features-content{
+    max-width: 580px;
+} */
+.features-section-title{
+    font-size: 2.8125rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+#span{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 #000000;
+    margin-bottom: 20px;
+}
+.features-section-description, .card-description{
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.architect-banner{
+    position: relative;
+}
+.architect-banner img{
+    width: 100%;
+}
+#experience-badge{
+    padding: 46px 42px;
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    transform: translate(-50%, 50%);
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+#experience-badge span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+/* Features Styles End */
+
 /* Some Facts Styles Start */
 .facts-title{
     font-size: 2.8125rem;
@@ -245,6 +302,14 @@
         justify-items: center;
         gap: 48px;
     }
+    .features{
+        flex-direction: column;
+    }
+    #experience-badge{
+        position: static;
+        margin-top: 5%;
+        transform: translate(-0%, 0%);
+    }
 }
 
 /* Responsive For Medium Device */
@@ -254,6 +319,14 @@
     }
     .our-features{
         max-width: 100%;
+    }
+    .features{
+        flex-direction: column;
+    }
+    #experience-badge{
+        position: static;
+        margin-top: 5%;
+        transform: translate(-0%, 0%);
     }
 }
 
