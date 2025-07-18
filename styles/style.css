@@ -37,6 +37,13 @@
     border: none;
     font-size: 1.25rem;
     font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-primary:hover{
+    background-color: transparent;
+    color: #FF900E;
+    outline: 1px solid #FF900E;
 }
 .main > section{
     margin: 0 12px;
@@ -54,7 +61,6 @@
 .nav{
     max-width: 1440px;
     margin: 0 auto;
-    margin: 0 12px;
     padding: 25px 0;
 }
 .brand{
@@ -78,7 +84,6 @@
 .banner{
     max-width: 1440px;
     margin: 0 auto;
-    margin: 0 12px;
     margin-top: 100px;
     padding: 25px 0;
 }
